@@ -1,10 +1,189 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Informatica</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <img src="Design/test.jpg" alt="">
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bladerunners - FTC Robotics Team</title>
+    <style>
+        /* Use CSS variables for easy customization of the color theme */
+        :root {
+            --bg-color: #001f3f; /* Dark navy blue background from logo */
+            --primary-color: #ff4136; /* Red from logo outlines */
+            --accent-color: #0074d9; /* Blue from logo accents */
+            --text-color: #ffffff; /* White text */
+            --secondary-text: #dddddd; /* Lighter gray for secondary text */
+            --border-color: #ff4136; /* Red for borders */
+        }
+
+        /* Reset and basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        header img {
+            max-width: 300px; /* Adjust based on your logo size */
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Main sections */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.1); /* Slight overlay for readability */
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--border-color);
+            color: var(--secondary-text);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Replace 'logo.png' with the path to your actual logo file -->
+        <img src="logo.png" alt="The Bladerunners Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team Members</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to The Bladerunners</h2>
+            <p>We are a passionate FTC robotics team dedicated to innovation, engineering, and competition. Explore our site to learn more about our journey!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The Bladerunners is an FTC (FIRST Tech Challenge) robotics team based in [Your Location]. We focus on building robots that solve real-world problems while learning valuable STEM skills.</p>
+            <!-- Add more paragraphs or images as needed -->
+        </section>
+
+        <section id="team">
+            <h2>Team Members</h2>
+            <ul>
+                <li>Member 1 - Role: Programmer</li>
+                <li>Member 2 - Role: Builder</li>
+                <!-- Add your team members here -->
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <p>Details about our robots and projects. You can add images or descriptions here.</p>
+            <!-- Example: <img src="robot.jpg" alt="Our Robot"> -->
+        </section>
+
+        <section id="competitions">
+            <h2>Competitions</h2>
+            <p>We've participated in various FTC events. Here's a list of our achievements:</p>
+            <ul>
+                <li>2024 Regional Championship - 2nd Place</li>
+                <!-- Add your competitions here -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: [your.email@example.com]</p>
+            <p>Follow us on social media: [Links]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Bladerunners. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript for smooth scrolling to sections -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
