@@ -15,7 +15,7 @@ form.addEventListener("submit", async (e) => {
   try {
     // Hier moet je een echte mailservice of backend koppelen.
     // Bijvoorbeeld via Formspree of een eigen server.
-    const response = await fetch("https://formspree.io/f/yourFormID", {
+    const response = await fetch("https://formspree.io/f/meolqlgg", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, message }),

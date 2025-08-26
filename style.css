@@ -17,6 +17,11 @@
   font-family: var(--font);
 }
 
+html {
+  scroll-behavior: smooth;      /* zorgt voor smooth scroll */
+  scroll-padding-top: 150px;     /* ruimte boven secties (hoogte ≈ navbar) */
+}
+
 /* =======================
    Algemene layout
    ======================= */
@@ -52,6 +57,10 @@ header {
 
 .nav-links a {
   color: white;
+  font-size: xx-large;
+  width: auto;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -120,6 +129,10 @@ header {
   max-height: 80px;
 }
 
+.logoBlad {
+  max-width: 150px;
+}
+
 /* =======================
    Contact
    ======================= */
@@ -167,7 +180,7 @@ footer {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
 }
@@ -240,13 +253,24 @@ footer {
   background-color: #717171;
 }
 
+.centered {
+  position: relative;
+  text-align: center;
+  text-shadow: 3px 3px 3px #000000;   
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.8s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
