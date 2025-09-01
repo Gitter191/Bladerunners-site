@@ -1,6 +1,3 @@
-// =======================
-// Contact formulier
-// =======================
 const form = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
@@ -13,8 +10,6 @@ form.addEventListener("submit", async (e) => {
   formStatus.innerText = "Versturen...";
 
   try {
-    // Hier moet je een echte mailservice of backend koppelen.
-    // Bijvoorbeeld via Formspree of een eigen server.
     const response = await fetch("https://formspree.io/f/meolqlgg", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -44,5 +39,5 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000);
 }

@@ -1,12 +1,10 @@
-/* =======================
-   Basis kleuren en fonts
-   ======================= */
+
 :root {
-  --primary: #0a0d1a;     /* achtergrond donkerblauw/zwart */
-  --secondary: #e1062c;   /* felrood (accent, knoppen/hover) */
-  --highlight: #00aaff;   /* helderblauw (details, links) */
-  --text: #ffffff;        /* witte tekst */
-  --background: #f7f7f7;  /* lichte achtergrond voor secties */
+  --primary: #0a0d1a;     /* achtergrond */
+  --secondary: #e1062c;   /* accent, knoppen/hover */
+  --highlight: #00aaff;   /* details, links */
+  --text: #ffffff;        /* tekst */
+  --background: #f7f7f7;  /* secties */
   --font: 'Arial', sans-serif;
 }
 
@@ -18,7 +16,7 @@
 }
 
 html {
-  scroll-behavior: smooth;      /* zorgt voor smooth scroll */
+  scroll-behavior: smooth;      
   scroll-padding-top: 150px;     /* ruimte boven secties (hoogte ≈ navbar) */
 }
 
