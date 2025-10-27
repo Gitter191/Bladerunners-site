@@ -76,25 +76,32 @@ header {
   overflow: hidden;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
 @media (max-width: 768px) {
   .slideshow-container {
     background-size: cover;
-    height: 60vh; /* maak slider wat hoger voor tekst */
   }
 
-  .mySlides img {
-    width: 110%; /* lichte zoom zodat afbeelding groter is */
+  .fade {
+    width: 160%; /* lichte zoom zodat afbeelding groter is */
     object-fit: cover;
   }
 
-  .centered h1 {
-    font-size: 1.5rem;
-    padding: 0 1rem; /* voorkomt dat de tekst buiten valt */
+  .centered h1{
+    font-size: 1rem !important;
   }
 
   .centered p {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -166,7 +173,7 @@ header {
 
 @media (max-width: 768px) {
   .logoBlad img {
-    max-width: 120px; /* iets kleiner op mobiel, maar niet te klein */
+    max-width: 90px; /* iets kleiner op mobiel, maar niet te klein */
   }
 }
 
