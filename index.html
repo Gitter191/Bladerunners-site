@@ -11,6 +11,7 @@
   <header>
     <nav class="navbar">
       <div class="logoBlad"><img src="img/FTC-logo-trans2.png" style="width: 100%;"></div>
+      <div class="menu-toggle" aria-label="Menu openen">☰</div>
       <ul class="nav-links">
         <li><a href="#about">About Us</a></li>
         <li><a href="#team">Team</a></li>
@@ -24,17 +25,14 @@
 
 
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
     <img src="img/BANNER-1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
     <img src="img/BANNER-2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
     <img src="img/BANNER-3.jpg" style="width:100%">
   </div>
 
@@ -151,5 +149,13 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
