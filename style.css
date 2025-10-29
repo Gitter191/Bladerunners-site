@@ -92,7 +92,7 @@ header {
   }
 
   .fade {
-    width: 160%; /* lichte zoom zodat afbeelding groter is */
+    width: 160%;
     object-fit: cover;
   }
 
@@ -173,7 +173,7 @@ header {
 
 @media (max-width: 768px) {
   .logoBlad img {
-    max-width: 90px; /* iets kleiner op mobiel, maar niet te klein */
+    max-width: 90px;
   }
 }
 
