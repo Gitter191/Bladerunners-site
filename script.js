@@ -17,13 +17,13 @@ form.addEventListener("submit", async (e) => {
     });
 
     if (response.ok) {
-      formStatus.innerText = "Bedankt! Je bericht is verstuurd.";
+      formStatus.innerText = "Thank you! Your message has been sent.";
       form.reset();
     } else {
-      formStatus.innerText = "Er ging iets mis, probeer opnieuw.";
+      formStatus.innerText = "Something went wrong, please try again.";
     }
   } catch (error) {
-    formStatus.innerText = "Verbindingsfout, probeer later opnieuw.";
+    formStatus.innerText = "Connection error, please try again later.";
   }
 });
 
