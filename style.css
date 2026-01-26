@@ -206,7 +206,7 @@ button:hover {
   background: #b71c2b;
 }
 
-footer {
+/* footer {
   background: var(--primary);
   color: white;
   padding: 1rem 2rem;
@@ -240,6 +240,81 @@ footer {
 .footer-text {
   font-size: 1rem;
   margin: 0;
+} */
+
+footer {
+  background: var(--primary);
+  color: white;
+  padding: 2rem 1rem; /* Iets meer ademruimte boven en onder */
+  margin-top: 4rem;    /* Zorgt dat hij niet tegen de contactsectie aanplakt */
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Alles in het midden */
+  align-items: center;
+  position: relative;     /* Nodig voor de icon-positie */
+  min-height: 30px;       /* Geeft een stabiele minimale hoogte */
+}
+
+.footer-logo {
+  position: absolute;     /* We houden hem links, maar binnen de flexbox */
+  left: 0;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.sponsor-description {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  font-style: italic;
+  color: #444;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* Ruimte tussen de logo's */
+  margin-bottom: 3rem;
+}
+
+.sponsor-item {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-item img {
+  max-width: 20%;
+  width: auto;
+  height: auto;
+  filter: grayscale(20%); /* Maakt het rustiger, wordt kleur op hover */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor-item:hover {
+  transform: scale(1.1); /* Vergroot het logo een klein beetje */
+}
+
+.sponsor-item:hover img {
+  filter: grayscale(0%); /* Logo krijgt volledige kleur op hover */
 }
 
 @media (max-width: 768px) {
@@ -292,5 +367,14 @@ footer {
   width: 30px;
   height: 30px;
   transition: transform 0.3s ease;
-}
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    position: static; /* Logo komt boven de tekst op mobiel */
+  }
 }
